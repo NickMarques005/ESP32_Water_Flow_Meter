@@ -462,9 +462,6 @@ void sendSensorDataRequest()
 
 static void handleNetworkSystem()
 {
-    /*Serial.println("*****************");
-    Serial.println("HANDLE NETWORK!");
-    Serial.println("*****************");*/
 
     if (!isConnectedToWifi)
     {
@@ -473,10 +470,6 @@ static void handleNetworkSystem()
             // Inicializar WIFI ao Access Point:
             Serial.println("\nINICIALIZAR SERVER PARA RECEBER DADOS DE REDE!");
             initialize_APServer();
-        }
-        else
-        {
-            // Serial.println("SERVER CRIADO!");
         }
     }
 
